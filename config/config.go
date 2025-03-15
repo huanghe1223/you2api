@@ -14,7 +14,7 @@ type Config struct {
 
 func Load() (*Config, error) {
     config := &Config{
-        Port:     8080,
+        Port:     8999,
         LogLevel: "info",
         Proxy: ProxyConfig{
             EnableProxy:     getEnvBool("ENABLE_PROXY", false),
