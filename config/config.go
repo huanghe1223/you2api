@@ -17,8 +17,8 @@ func Load() (*Config, error) {
         Port:     8999,
         LogLevel: "info",
         Proxy: ProxyConfig{
-            EnableProxy:     getEnvBool("ENABLE_PROXY", true),
-            ProxyURL:       getEnv("PROXY_URL", "http://47.236.158.219:21025"),
+            EnableProxy:     getEnvBool("ENABLE_PROXY", false),
+            ProxyURL:       getEnv("PROXY_URL", ""),
             ProxyTimeoutMS: getEnvInt("PROXY_TIMEOUT_MS", 5000),
         },
     }
